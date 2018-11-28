@@ -81,7 +81,17 @@ function stats(){
 	
 	var time = listOfNodes[listOfNodes.length - 1].time - listOfNodes[0].time;
 	var timeElapsed = time/60/60/1000;
-	console.log(avgCad);
+	
+	document.getElementById("avgHR").innerHTML = "Average heart rate: " + avgHR;
+	document.getElementById("avgCad").innerHTML = "Average cadence: " + avgCad;
+	document.getElementById("avgEle").innerHTML = "Average elevation: " + avgEle; 
+	document.getElementById("minHR").innerHTML = "Minimum heart rate: " + minHR;
+	document.getElementById("minCad").innerHTML = "Minimum cadence: " + minCad;
+	document.getElementById("minEle").innerHTML = "Minimum elevation: " + minEle;
+	document.getElementById("maxHR").innerHTML = "Maximum heart rate: " + maxHR;
+	document.getElementById("maxCad").innerHTML = "Maximum cadence: " + maxCad;
+	document.getElementById("maxEle").innerHTML = "Maximum elevation: " + maxEle;
+	document.getElementById("time").innerHTML = "Time elapsed: " + timeElapsed;
 }
 
 function draw(){
